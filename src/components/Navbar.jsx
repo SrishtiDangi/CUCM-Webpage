@@ -25,7 +25,7 @@ function Navbar() {
 
   // ✅ FETCH NAVBAR FROM BACKEND
   useEffect(() => {
-    fetch("http://localhost:5000/api/navbar")
+    fetch("https://cucm-backend.onrender.com/api/navbar")
       .then((res) => res.json())
       .then((data) => setNavData(data))
       .catch((err) => console.log(err));

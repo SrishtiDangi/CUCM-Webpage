@@ -13,7 +13,7 @@ function PhoneRegistration() {
   const [steps, setSteps] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/phoneRegistration")
+    fetch("https://cucm-backend.onrender.com/api/phoneRegistration")
       .then((res) => res.json())
       .then((data) => setSteps(data))
       .catch((err) => console.log(err));

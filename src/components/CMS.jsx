@@ -4,7 +4,7 @@ function CMS() {
   const [cmsData, setCmsData] = useState(null);
 
 useEffect(() => {
-  fetch("http://localhost:5000/api/cms")
+  fetch("https://cucm-backend.onrender.com/api/cms")
     .then(res => res.json())
     .then(data => setCmsData(data))
     .catch(err => console.log(err));

@@ -11,7 +11,7 @@ function Protocols() {
 
   // ✅ FETCH FROM BACKEND
   useEffect(() => {
-    fetch("http://localhost:5000/api/protocols")
+    fetch("https://cucm-backend.onrender.com/api/protocols")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

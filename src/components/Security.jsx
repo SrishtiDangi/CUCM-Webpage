@@ -14,7 +14,7 @@ function Security() {
 
   // ✅ FETCH BACKEND
   useEffect(() => {
-    fetch("http://localhost:5000/api/security")
+    fetch("https://cucm-backend.onrender.com/api/security")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

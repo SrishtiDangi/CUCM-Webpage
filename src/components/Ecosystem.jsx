@@ -41,7 +41,7 @@ function Ecosystem() {
   const [ecosystem, setEcosystem] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/ecosystem")
+    fetch("https://cucm-backend.onrender.com/api/ecosystem")
       .then((res) => res.json())
       .then((data) => setEcosystem(data))
       .catch((err) => console.log(err));

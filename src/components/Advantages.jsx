@@ -6,7 +6,7 @@ function Advantages() {
 
   // ✅ FETCH BACKEND
   useEffect(() => {
-    fetch("http://localhost:5000/api/advantages")
+    fetch("https://cucm-backend.onrender.com/api/advantages")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

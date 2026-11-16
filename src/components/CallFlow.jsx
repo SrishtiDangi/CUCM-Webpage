@@ -5,7 +5,7 @@ function CallFlow() {
   const [flow, setFlow] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/callflow")
+    fetch("https://cucm-backend.onrender.com/api/callflow")
       .then((res) => res.json())
       .then((data) => setFlow(data))
       .catch((err) => console.log(err));

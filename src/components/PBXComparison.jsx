@@ -12,7 +12,7 @@ function PBXComparison() {
 
   // ✅ FETCH FROM BACKEND
   useEffect(() => {
-    fetch("http://localhost:5000/api/pbxComparison")
+    fetch("https://cucm-backend.onrender.com/api/pbxComparison")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function Architecture() {
   const [architecture, setArchitecture] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5000/api/architecture")
+    fetch("https://cucm-backend.onrender.com/api/architecture")
     .then((res) => res.json())
     .then((data) => setArchitecture(data))
     .catch((err) => console.log(err));

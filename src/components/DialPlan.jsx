@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 function DialPlan() {
   const [dialplan, setDialplan] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5000/api/dialplan")
+    fetch("https://cucm-backend.onrender.com/api/dialplan")
     .then((res) => res.json())
     .then((data) => setDialplan(data))
     .catch((err) => console.log(err));

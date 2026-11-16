@@ -7,7 +7,7 @@ function ClassOfService() {
 
   // ✅ FETCH BACKEND DATA
   useEffect(() => {
-    fetch("http://localhost:5000/api/classOfService")
+    fetch("https://cucm-backend.onrender.com/api/classOfService")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

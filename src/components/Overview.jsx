@@ -8,7 +8,7 @@ import cloud from "../assets/cloud.png";
 function Overview() {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/overview")
+    fetch("https://cucm-backend.onrender.com/api/overview")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 function RackComparison() {
   const [rackData, setRackData] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5000/api/rack")
+    fetch("https://cucm-backend.onrender.com/api/rack")
     .then(res => res.json())
     .then(data => setRackData(data))
     .catch(err => console.log(err));

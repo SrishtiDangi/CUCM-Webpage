@@ -7,7 +7,7 @@ function Troubleshooting() {
 
   // ✅ FETCH BACKEND DATA
   useEffect(() => {
-    fetch("http://localhost:5000/api/troubleshooting")
+    fetch("https://cucm-backend.onrender.com/api/troubleshooting")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

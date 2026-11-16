@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 function GatewayPSTN() {
   const [flow, setFlow] = useState([]);
   useEffect(() => {
-  fetch("http://localhost:5000/api/gateway")
+  fetch("https://cucm-backend.onrender.com/api/gateway")
     .then((res) => res.json())
     .then((data) => setFlow(data))
     .catch((err) => console.log(err));
