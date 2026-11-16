@@ -7,7 +7,7 @@ import PBXComparison from "./components/PBXComparison";
 import Protocols from "./components/Protocols";
 import PhoneRegistration from "./components/PhoneRegistration";
 import DialPlan from "./components/DialPlan";
-import CodecQoS from "./components/CodecQoS";
+import CodecQoS from "./components/CodecQos";
 import Advantages from "./components/Advantages";
 import Footer from "./components/Footer";
 import CMS from "./components/CMS";
